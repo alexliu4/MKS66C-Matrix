@@ -5,7 +5,7 @@ struct matrix {
   double **m;
   int rows, cols;
   int lastcol;
-} matrix;
+};
 
 //Basic matrix manipulation routines
 struct matrix *new_matrix(int rows, int cols);
@@ -16,6 +16,8 @@ void copy_matrix(struct matrix *a, struct matrix *b);
 //functions students need to complete
 void print_matrix(struct matrix *m);
 void ident(struct matrix *m);
+void oneTest(struct matrix *m);
+void randTest(struct matrix *m);
 void matrix_mult(struct matrix *a, struct matrix *b);
 
 #endif
